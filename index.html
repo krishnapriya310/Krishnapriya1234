@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer and Buyer Information Form</title>
+    <link rel="stylesheet" href="sih.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Farmer Information Form</h2>
+        <form id="farmerForm">
+            <!-- Farmer Name (Short Para) -->
+            <label for="farmerName">Farmer Name:</label>
+            <textarea id="farmerName" name="farmerName" rows="2" placeholder="Enter Farmer's Name"></textarea>
+
+            <!-- Farmer ID (File Upload) -->
+            <label for="farmerId">Farmer ID (Upload File):</label>
+            <input type="file" id="farmerId" name="farmerId" accept=".pdf,.jpg,.png,.jpeg">
+
+            <!-- Farmer Contact Number -->
+            <label for="contactNumber">Farmer Contact Number:</label>
+            <textarea id="contactNumber" name="contactNumber" rows="1" placeholder="Enter Contact Number"></textarea>
+
+            <!-- Farm Location (Dropdown) -->
+            <label for="farmLocation">Farm Location:</label>
+            <select id="farmLocation" name="farmLocation">
+                <option value="chennai">Chennai</option>
+                <option value="coimbatore">Coimbatore</option>
+                <option value="trichy">Trichy</option>
+                <option value="ooty">Ooty</option>
+            </select>
+
+            <h2>Buyer Information</h2>
+
+            <!-- Buyer Name -->
+            <label for="buyerName">Buyer Name:</label>
+            <textarea id="buyerName" name="buyerName" rows="1" placeholder="Enter Buyer's Name"></textarea>
+
+            <!-- Buyer Company Name -->
+            <label for="companyName">Company Name:</label>
+            <textarea id="companyName" name="companyName" rows="1" placeholder="Enter Company Name"></textarea>
+
+            <!-- Buyer Business Registration Number -->
+            <label for="businessRegNo">Business Registration Number:</label>
+            <textarea id="businessRegNo" name="businessRegNo" rows="1" placeholder="Enter Business Registration Number"></textarea>
+
+            <!-- Buyer Address -->
+            <label for="buyerAddress">Address:</label>
+            <textarea id="buyerAddress" name="buyerAddress" rows="3" placeholder="Enter Buyer's Address"></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="sih.js"></script>
+</body>
+</html>
